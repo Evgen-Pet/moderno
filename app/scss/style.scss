@@ -51,3 +51,62 @@
     font-weight: 500;
   }
 }
+.search {
+  background-image: url('../images/search-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 533px;
+
+  &__inner {
+    padding: 155px 0 100px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  &__inner-title {
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  &__inner-text {
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__inner-form {
+    max-width: 670px;
+    margin: 0 auto;
+    position: relative;
+    input {
+      display: block;
+      width: 100%;
+      box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+      border-radius: 4px;
+      height: 56px;
+      border: none;
+      font-size: 14px;
+      font-weight: 500;
+      outline: none;
+      padding-left: 25px;
+      padding-right: 60px;
+      &:focus {
+        box-shadow: inset 0px 1px 5px 0px rgba(83, 124, 36, 0.75);
+      }
+      &::placeholder {
+        color: #90a4ae;
+        font-weight: 500;
+      }
+    }
+    button {
+      position: absolute;
+      border: none;
+      background-color: transparent;
+      right: 16px;
+      top: 17px;
+    }
+  }
+}
